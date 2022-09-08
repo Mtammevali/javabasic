@@ -1,6 +1,7 @@
 package week2;
 import java.util.Scanner;
 public class ex39 {
+    String word = "Supercalifragilisticexpialidocious";
     private static void printStars(int amount) {
         int times = 1;
         while (true) {
