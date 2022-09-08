@@ -25,6 +25,8 @@ public class ex36 {
         System.out.println("Thank you see you later");
         System.out.println("The sum is " + sum);
         System.out.println("how many numbers?:" + count);
+        double average = (double)sum / count;
+        System.out.println("average"+ average);
     }
 }
 
