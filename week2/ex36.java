@@ -9,6 +9,8 @@ public class ex36 {
         int number;
         int sum = 0;
         int count = 0;
+        int even = 0;
+        int odd = 0;
         while (true) {
 
 
@@ -19,7 +21,12 @@ public class ex36 {
             }
             sum += number;//sum= sum+number
             count++;
-
+            if(number % 2 == 0){
+                even++;
+            }
+            else {
+                odd++;
+            }
         }
 
         System.out.println("Thank you see you later");
@@ -27,6 +34,8 @@ public class ex36 {
         System.out.println("how many numbers?:" + count);
         double average = (double)sum / count;
         System.out.println("average: "+ average);
+        System.out.println("even numbers: "+ even);
+        System.out.println("odd numbers: "+ odd);
     }
 }
 
