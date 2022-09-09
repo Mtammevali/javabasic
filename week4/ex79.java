@@ -3,7 +3,7 @@ package week4;
 public class ex79 {
     public static void main(String[] args) {
         NumberStatistics stats = new NumberStatistics();
-        stats.addNumber(0);
+        stats.addNumber(4);
         stats.addNumber(5);
         stats.addNumber(1);
         stats.addNumber(2);

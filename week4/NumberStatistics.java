@@ -22,6 +22,7 @@ public class NumberStatistics {
     public int sum() {
         return this.sum;
 
+
     }
     public double average() {
         // code here
