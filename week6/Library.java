@@ -15,4 +15,22 @@ public class Library {
             System.out.println(book);
         }
     }
+
+    public ArrayList<Book> searchByTitle(String title) {
+        ArrayList<Book> found = new ArrayList<Book>();
+
+        for (Book book:this.books) {
+            if (book.title().contains(title)){
+                found.add(book);
+            }
+
+
+        }
+
+
+        return found;
+        }
+
+
+
 }
