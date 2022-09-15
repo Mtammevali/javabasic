@@ -24,6 +24,15 @@ public class ex101 {
             System.out.println(book);
         }
 
+        for (Book book: Library.searchByTitle("CHEESE")) {
+            System.out.println(book);
+        }
+
+        System.out.println("---");
+        for (Book book: Library.searchByPublisher("PENGUIN  ")) {
+            System.out.println(book);
+        }
+
 
     }
 }
