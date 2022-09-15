@@ -13,5 +13,17 @@ public class ex101 {
         for (Book book: result) {
             System.out.println(book);
         }
+
+        System.out.println("---");
+        for (Book book: Library.searchByPublisher("Penguin Group")) {
+            System.out.println(book);
+        }
+
+        System.out.println("---");
+        for (Book book: Library.searchByYear(1952)) {
+            System.out.println(book);
+        }
+
+
     }
 }

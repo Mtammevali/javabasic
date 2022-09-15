@@ -31,6 +31,30 @@ public class Library {
         return found;
         }
 
+    public ArrayList<Book> searchByPublisher(String publisher) {
+        ArrayList<Book> found = new ArrayList<Book>();
+
+        for (Book book : this.books) {
+            if (book.publisher().contains(publisher.trim())) {
+                found.add(book);
+            }
+        }
+        return found;
+    }
+
+    public ArrayList<Book> searchByYear(int year) {
+        ArrayList<Book> found = new ArrayList<Book>();
+
+        for (Book book : this.books) {
+            if (book.year() == year) {
+                found.add(book);
+            }
+        }
+        return found;
+    }
+
 
 
 }
+
+
