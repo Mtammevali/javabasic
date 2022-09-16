@@ -2,6 +2,7 @@ package week8;
 import java.util.Map;
 import java.util.HashSet;
 import java.util.HashMap;
+import java.util.ArrayList;
 public class VehicleRegister {
     private HashMap<RegistrationPlate, String> owners;
 
@@ -37,5 +38,25 @@ public class VehicleRegister {
 
     public HashMap<RegistrationPlate, String> getOwners() {
         return owners;
+    }
+
+    public void printRegistrationPlates(){
+        for (RegistrationPlate plate:this.owners.keySet()) {
+            System.out.println(plate);
+        }
+    }
+
+    public void printOwners(){
+        ArrayList<String> owners = new ArrayList<String>();
+        for (RegistrationPlate plate:this.owners.keySet()) {
+            String owner = this.owners.get(plate);
+            if(!owners.contains(owner)){
+                owners.add(owner);
+            }
+        }
+
+        for (String owner : owners) {
+            System.out.println(owner);
+        }
     }
 }
