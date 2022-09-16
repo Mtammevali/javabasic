@@ -22,4 +22,9 @@ public class ShoppingBasket {
         }
         return price;
     }
+    public void print(){
+        for (Purchase purchase: this.purchases) {
+            System.out.println(purchase);
+        }
+    }
 }
