@@ -1,16 +1,23 @@
 package week7;
 
 public class ex4 {
-        public static void main(String[] args) {
-            thing book = new thing("Happiness in Three Steps", 2);
-            thing mobile = new thing("Nokia 3210", 1);
+    public static void main(String[] args) {
+        thing book = new thing("Happiness in three steps", 2);
+        thing mobile = new thing("Nokia 3210", 1);
+        thing brick = new thing("Brick", 4);
 
-            System.out.println("Book name: " + book.getName());
-            System.out.println("Book weight: " + book.getWeight());
+        Suitcase suitcase = new Suitcase(5);
+        System.out.println(suitcase);
 
-            System.out.println("Book: " + book);
-            System.out.println("Mobile: " + mobile);
-        }
+        suitcase.addThing(book);
+        System.out.println(suitcase);
+
+        suitcase.addThing(mobile);
+        System.out.println(suitcase);
+
+        suitcase.addThing(brick);
+        System.out.println(suitcase);
+    }
     }
 
 
