@@ -18,6 +18,16 @@ public class Dictionary {
     public String translate(String word) {
         return dictionary.get(word);
     }
+    public  int amountOfWords(){
+        return this.dictionary.size();
+    }
+    public ArrayList<String> translationList() {
+        ArrayList<String> list = new ArrayList<String>();
+        for (String key : dictionary.keySet()) {
+            list.add(key + " = " + dictionary.get(key));
+        }
+        return list;
 
+    }
 }
 
